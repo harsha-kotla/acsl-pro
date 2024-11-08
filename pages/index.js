@@ -16,7 +16,7 @@ export default function Home() {
           Welcome to <span className="text-indigo-500">ACSL Pro</span>
         </h1>
         <p className="text-lg text-gray-700 mb-8">
-          Your hub for competitive programming challenges and contests.
+          Your hub for competitive programming  challenges and contests.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl px-8">
