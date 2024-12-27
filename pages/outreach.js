@@ -1,55 +1,44 @@
-import Navbar from '@/components/Navbar';
+// outreach.js
 import Head from 'next/head';
+import Navbar from '@/components/Navbar';
 
 export default function Outreach() {
   return (
     <div className="min-h-screen flex flex-col">
-        <Head>
-            <title>Outreach - CodeClimb</title>
-        </Head>
+      <Head>
+        <title>StemClimb - Outreach</title>
+        <meta name="description" content="StemClimb - Outreach" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
-      <main className="flex-grow bg-gray-100 text-gray-800">
-        <div className="container mx-auto px-6 py-12">
-          <h1 className="text-4xl font-bold text-blue-600 mb-6">Outreach</h1>
-          <p className="text-lg mb-4">
-            At <span className="font-semibold">CodeClimb</span>, we believe in empowering learners and developers from all
-            backgrounds to excel in coding and problem-solving.
-          </p>
-          <p className="text-lg mb-4">
-            Our outreach programs aim to bridge the gap between aspiring coders and the resources they need to succeed.
-            Whether it's hosting workshops, organizing competitions, or collaborating with educational institutions, we're
-            here to make a difference.
-          </p>
-
-          <section className="mt-8">
-            <h2 className="text-2xl font-semibold text-blue-500 mb-4">Get Involved</h2>
-            <ul className="list-disc ml-8 text-lg">
-              <li className="mb-2">
-                <strong>Workshops:</strong> Join or host coding workshops to inspire and teach the next generation of developers.
-              </li>
-              <li className="mb-2">
-                <strong>Competitions:</strong> Participate in or sponsor competitive programming contests to challenge yourself and others.
-              </li>
-              <li className="mb-2">
-                <strong>Educational Partnerships:</strong> Collaborate with schools, colleges, and universities to bring CodeClimb to more learners.
-              </li>
-            </ul>
-          </section>
-
-          <section className="mt-8">
-            <h2 className="text-2xl font-semibold text-blue-500 mb-4">Contact Us</h2>
-            <p className="text-lg">
-              Interested in working with us? Reach out at{' '}
-              <a href="mailto:outreach@codeclimb.com" className="text-blue-600 underline">
-                outreach@codeclimb.com
-              </a>
-              .
-            </p>
-          </section>
+      <main className="flex-grow bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white flex flex-col items-center py-12 px-6">
+        <h1 className="text-5xl font-bold mb-6">Outreach Initiatives</h1>
+        <p className="text-lg max-w-3xl text-center mb-12">
+          Discover our efforts to reach underrepresented communities and inspire a passion for STEM.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
+          <div className="card bg-white text-purple-900 shadow-lg p-8 rounded-lg hover:bg-purple-50 transition">
+            <h3 className="text-2xl font-semibold mb-4">Community Workshops</h3>
+            <p>Hands-on workshops for students and educators to explore STEM topics.</p>
+          </div>
+          <div className="card bg-white text-purple-900 shadow-lg p-8 rounded-lg hover:bg-purple-50 transition">
+            <h3 className="text-2xl font-semibold mb-4">Mentorship Programs</h3>
+            <p>One-on-one mentorship to foster STEM learning and career development.</p>
+          </div>
+          <div className="card bg-white text-purple-900 shadow-lg p-8 rounded-lg hover:bg-purple-50 transition">
+            <h3 className="text-2xl font-semibold mb-4">School Partnerships</h3>
+            <p>Collaborating with schools to bring STEM resources to classrooms.</p>
+          </div>
+          <div className="card bg-white text-purple-900 shadow-lg p-8 rounded-lg hover:bg-purple-50 transition">
+            <h3 className="text-2xl font-semibold mb-4">Volunteer Opportunities</h3>
+            <p>Join our team and make a difference in STEM education.</p>
+          </div>
         </div>
       </main>
-      <footer className="py-6 bg-gray-800 text-center text-white">
-        <p>&copy; {new Date().getFullYear()} CodeClimb. All Rights Reserved.</p>
+      <footer className="w-full py-8 bg-gray-900 text-center text-gray-300">
+        <p>
+          Empowering Communities through STEM &copy; {new Date().getFullYear()} StemClimb. All Rights Reserved.
+        </p>
       </footer>
     </div>
   );

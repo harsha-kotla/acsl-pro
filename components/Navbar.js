@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-white hover:text-yellow-300 transition">
-          CodeClimb
+          StemClimb
         </Link>
 
         {/* Navigation Links */}
